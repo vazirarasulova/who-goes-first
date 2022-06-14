@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Travel length</title>
+</head>
+<body>
+  <section class="travel">
+    <div class="container">
+
+      <h1 class="travel__title text-center text-primary fw-bold fs-1 mt-3">Who Goes First</h1>
+
+
+      <form class="form text-center my-5 d-flex justify-content-center align-items-center" method="post">
+        
+        <label class="form__label fw-bolder d-flex align-items-center "> Distance
+          <input class="form__input form-control w-75 ms-3 me-5" type="text" placeholder="Enter the distance">
+        </label>
+
+        <button class="form__button btn btn-primary" type="submit">calculate</button>
+      </form>
+
+      <div class="result">
+        
+        <div class="alert alert-success result-success w-50 my-0 mx-auto text-center fw-bold fs-4" role="alert">
+         You have successfully complated the result
+        </div>
+
+        <div class="alert alert-danger result-error w-50 my-0 mx-auto text-center fw-bold fs-4" role="alert">
+          Enter the Number
+        </div>
+
+        <div class="alert alert-warning result-warning w-50 my-0 mx-auto text-center fw-bold fs-4" role="alert">
+          Enter a number greater than 0
+        </div>
+
+      </div>
+
+      <ul class="travel__list d-flex justify-content-sm-between align-items-center list-unstyled">
+
+        <li class="travel__item w-25 text-center border-1 pb-5">
+          <img src="./images/walker.png" alt="" class="travel__img mb-3" width="200" height="200">
+          <p class="travel__text fw-bolder text-primary">Walker</p>
+          <span class="travel__length-walker"></span>
+        </li>
+
+        <li class="travel__item w-25 text-center border-1 pb-5">
+          <img src="./images/bicycle.png" alt="" class="travel__img mb-3" width="200" height="200">
+          <p class="travel__text fw-bolder text-primary">Bicycle</p>
+          <span class="travel__length-bicycle"></span>
+        </li>
+
+        <li class="travel__item w-25 text-center border-1 pb-5">
+          <img src="./images/driving.png" alt="" class="travel__img mb-3" width="200" height="200">
+          <p class="travel__text fw-bolder text-primary">Car</p>
+          <span class="travel__length-car"></span>
+        </li>
+
+        <li class="travel__item w-25 text-center border-1 pb-5">
+          <img src="./images/plane.png" alt="" class="travel__img mb-3" width="200" height="200">
+          <p class="travel__text fw-bolder text-primary">Plane</p>
+          <span class="travel__length-plane"></span>
+        </li>
+
+        
+      </ul>
+    </div>
+  </section>
+
+<script src="./js/main.js"></script>
+</body>
+</html>
